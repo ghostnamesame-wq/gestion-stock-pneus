@@ -1,0 +1,41 @@
+{
+    "15/05/2026 10:41:10": {
+        "action": "ENTREE",
+        "marque": "N",
+        "dimension": "200.50.16",
+        "type": "4 Saisons - Occasion",
+        "quantite": 1,
+        "prix": 20.0
+    },
+    "15/05/2026 10:41:22": {
+        "action": "ENTREE",
+        "marque": "P",
+        "dimension": "200.50.16",
+        "type": "4 Saisons - Occasion",
+        "quantite": 1,
+        "prix": 20.0
+    },
+    "15/05/2026 10:41:45": {
+        "action": "ENTREE",
+        "marque": "R",
+        "dimension": "195.65.16",
+        "type": "4 Saisons - Occasion",
+        "quantite": 10,
+        "prix": 20.0
+    },
+    "15/05/2026 10:42:01": {
+        "action": "ENTREE",
+        "marque": "SUV",
+        "dimension": "225.55.20",
+        "type": "4 Saisons - Occasion",
+        "quantite": 10,
+        "prix": 20.0
+    },
+    "15/05/2026 10:42:34": {
+        "action": "SORTIE",
+        "marque": "SUV",
+        "dimension": "225.55.20",
+        "type": "4 Saisons - Occasion",
+        "quantite": 6
+    }
+}
