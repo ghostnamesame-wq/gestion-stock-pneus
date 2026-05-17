@@ -1,0 +1,33 @@
+name: Build Mac Version
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Installer PyInstaller
+        run: pip install pyinstaller
+
+      - name: Créer l'application Mac
+        run: |
+          pyinstaller --onefile --windowed \
+            --name "Gestion_Stock_Pneus" \
+            --add-data "stock_pneus.json:." \
+            --add-data "mouvements_stock.json:." \
+            gestion_pneus.py
+
+      - name: Télécharger l'application
+        uses: actions/upload-artifact@v4
+        with:
+          name: Gestion_Stock_Pneus_Mac
+          path: dist/Gestion_Stock_Pneus.app
